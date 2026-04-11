@@ -13,13 +13,13 @@ A three-tier containerized web application for browsing, rating, and submitting 
      :8080                :3000                 :5432
 ```
 
-| Layer    | Technology                  | Container Image     |
-|----------|-----------------------------|---------------------|
-| Frontend | React 18, Vite, TypeScript  | nginx:alpine        |
-| API      | Express 4, TypeScript, pg   | node:20-alpine      |
-| Database | PostgreSQL 16               | postgres:16-alpine  |
+| Layer    | Technology                 | Container Image    |
+| -------- | -------------------------- | ------------------ |
+| Frontend | React 18, Vite, TypeScript | nginx:alpine       |
+| API      | Express 4, TypeScript, pg  | node:20-alpine     |
+| Database | PostgreSQL 16              | postgres:16-alpine |
 
-Both the frontend and API Dockerfiles use **multi-stage builds** to keep production images small.  The nginx container serves the compiled React app *and* reverse-proxies `/api/*` requests to the Express service so the browser only talks to a single origin.
+Both the frontend and API Dockerfiles use **multi-stage builds** to keep production images small. The nginx container serves the compiled React app _and_ reverse-proxies `/api/*` requests to the Express service so the browser only talks to a single origin.
 
 ## Prerequisites
 
@@ -61,16 +61,16 @@ docker compose down -v
 
 ## API Endpoints
 
-| Method  | Endpoint              | Description                     |
-|---------|-----------------------|---------------------------------|
-| GET     | `/api/health`         | Health check (DB connectivity)  |
-| GET     | `/api/jokes`          | List all jokes (?category=food) |
-| GET     | `/api/jokes/random`   | Get one random joke             |
-| GET     | `/api/jokes/:id`      | Get a specific joke             |
-| POST    | `/api/jokes`          | Create a joke                   |
-| PATCH   | `/api/jokes/:id/rate` | Rate a joke (0-5)               |
-| DELETE  | `/api/jokes/:id`      | Delete a joke                   |
-| GET     | `/api/categories`     | List distinct categories        |
+| Method | Endpoint              | Description                     |
+| ------ | --------------------- | ------------------------------- |
+| GET    | `/api/health`         | Health check (DB connectivity)  |
+| GET    | `/api/jokes`          | List all jokes (?category=food) |
+| GET    | `/api/jokes/random`   | Get one random joke             |
+| GET    | `/api/jokes/:id`      | Get a specific joke             |
+| POST   | `/api/jokes`          | Create a joke                   |
+| PATCH  | `/api/jokes/:id/rate` | Rate a joke (0-5)               |
+| DELETE | `/api/jokes/:id`      | Delete a joke                   |
+| GET    | `/api/categories`     | List distinct categories        |
 
 ### Example: Add a joke via curl
 
@@ -135,4 +135,17 @@ npm install
 npm run dev
 # Note: Vite proxies /api to http://api:3000 by default.
 # For local dev, change the proxy target in vite.config.ts to http://localhost:3000.
+
+
+
+## pgAdmin (Database Management UI)
+
+Added pgAdmin to provide a graphical interface for interacting with our PostgreSQL database. Instead of relying solely on command-line tools, pgAdmin allows us to easily view tables, run SQL queries, and manage the database during development.
+
+## Share bar
+
+Added a share bar underneath the joke, where you can copy the joke or share it with friends
+
+
+
 ```
