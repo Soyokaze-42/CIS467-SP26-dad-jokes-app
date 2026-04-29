@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        image: [app, api]
+        image: [frontend, api]
     #permissions are in the calling workflow
     steps:
       - name: Setup | Checkout Repository
@@ -45,7 +45,7 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           context: ./${{ matrix.image }}
-          file: ./Dockerfile
+          file: ./${{ matrix.image }}/Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
