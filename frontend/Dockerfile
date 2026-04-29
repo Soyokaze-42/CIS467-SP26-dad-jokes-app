@@ -1,11 +1,11 @@
 FROM node:20-alpine AS build
-WORKDIR /app
-COPY . .
+COPY package*.json ./
 RUN npm install
+COPY . .
 RUN npm run build
 
 # ---- Production Stage ----
-FROM nginx:alpine 
+FROM nginx:alpine AS runner
 # Copy built React assets
 COPY --from=build /app/dist /usr/share/nginx/html
 # Copy custom nginx config (handles SPA routing + API proxy)
