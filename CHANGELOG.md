@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.5 (2026-04-29)
+
+### Bug Fixes
+
+- **ci**: Add workdir back to dockerfiles
+  ([`8303029`](https://github.com/Soyokaze-42/CIS467-SP26-dad-jokes-app/commit/8303029ef33937ae46d645dd7467689801719d3b))
+
+
 ## v1.0.4 (2026-04-29)
 
 ### Bug Fixes
