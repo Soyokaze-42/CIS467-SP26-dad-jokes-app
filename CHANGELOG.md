@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.6 (2026-04-29)
+
+### Bug Fixes
+
+- **ci**: Add workdir back to api runner image
+  ([`48a2884`](https://github.com/Soyokaze-42/CIS467-SP26-dad-jokes-app/commit/48a2884a7c172bfb926136aa62d0d9135068da2e))
+
+
 ## v1.0.5 (2026-04-29)
 
 ### Bug Fixes
