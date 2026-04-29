@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.7 (2026-04-29)
+
+### Bug Fixes
+
+- Run nginx rootless
+  ([`04072f5`](https://github.com/Soyokaze-42/CIS467-SP26-dad-jokes-app/commit/04072f51709dab5e6903694965ed86f95e9bcfce))
+
+
 ## v1.0.6 (2026-04-29)
 
 ### Bug Fixes
