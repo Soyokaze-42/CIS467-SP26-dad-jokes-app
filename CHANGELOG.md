@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.8 (2026-04-29)
+
+### Bug Fixes
+
+- Nginx on port 8080 for rootless
+  ([`f8c699c`](https://github.com/Soyokaze-42/CIS467-SP26-dad-jokes-app/commit/f8c699c835c346336f15f8c703b8f4f5caca653c))
+
+
 ## v1.0.7 (2026-04-29)
 
 ### Bug Fixes
