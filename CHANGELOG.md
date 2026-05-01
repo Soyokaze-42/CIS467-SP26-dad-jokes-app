@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.1.2 (2026-05-01)
+
+### Bug Fixes
+
+- Change title from 'Dad jokes' to 'Dada jokes'
+  ([`8b4bc46`](https://github.com/Soyokaze-42/CIS467-SP26-dad-jokes-app/commit/8b4bc46ab1572c85fcf539064692a23dae462edc))
+
+
 ## v1.1.1 (2026-05-01)
 
 ### Bug Fixes
