@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.1.1 (2026-05-01)
+
+### Bug Fixes
+
+- Update title to get a new release
+  ([`c698cb9`](https://github.com/Soyokaze-42/CIS467-SP26-dad-jokes-app/commit/c698cb98b2d246c02654d1c2696df6650549906f))
+
+
 ## v1.1.0 (2026-05-01)
 
 ### Features
