@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.1.0 (2026-05-01)
+
+### Features
+
+- Update title in index.html to include exclamation mark
+  ([`d99c92c`](https://github.com/Soyokaze-42/CIS467-SP26-dad-jokes-app/commit/d99c92c54ffc18f9d2e7ee0d45b568394f3f00de))
+
+
 ## v1.0.8 (2026-04-29)
 
 ### Bug Fixes
