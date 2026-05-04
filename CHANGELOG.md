@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.1.3 (2026-05-04)
+
+### Bug Fixes
+
+- Build images for arm64 and amd64
+  ([`b55203a`](https://github.com/Soyokaze-42/CIS467-SP26-dad-jokes-app/commit/b55203afcdbf71248a5f7c71eb18dd471076e12c))
+
+
 ## v1.1.2 (2026-05-01)
 
 ### Bug Fixes
