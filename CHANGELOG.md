@@ -2,6 +2,28 @@
 
 <!-- version list -->
 
+## v1.1.4 (2026-05-04)
+
+### Bug Fixes
+
+- Correct title from 'Dada jokes' to 'Dad jokes'
+  ([`c78001e`](https://github.com/Soyokaze-42/CIS467-SP26-dad-jokes-app/commit/c78001e335afdb1940469641f59ed36e39bdecc5))
+
+### Continuous Integration
+
+- Fix condition syntax in CI workflow for publishing image
+  ([`8b3a197`](https://github.com/Soyokaze-42/CIS467-SP26-dad-jokes-app/commit/8b3a197a7f5586ca0e83351ce439e0f33e9787ee))
+
+- Update actions/checkout from v4 to v6
+  ([`a955254`](https://github.com/Soyokaze-42/CIS467-SP26-dad-jokes-app/commit/a955254d9e9c32b6b81d26ce7399dde94e6592e2))
+
+- Upgrade actions/checkout from v4 to v6
+  ([`b5ea609`](https://github.com/Soyokaze-42/CIS467-SP26-dad-jokes-app/commit/b5ea609e42d239650d4eed87a860ded45ba2450c))
+
+- Upgrade Docker login action to version 4
+  ([`69ebcad`](https://github.com/Soyokaze-42/CIS467-SP26-dad-jokes-app/commit/69ebcad9f363a472985bb76e0a6c23c977a0bd2f))
+
+
 ## v1.1.3 (2026-05-04)
 
 ### Bug Fixes
