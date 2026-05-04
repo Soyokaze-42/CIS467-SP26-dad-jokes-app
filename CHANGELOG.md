@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.1.5 (2026-05-04)
+
+### Bug Fixes
+
+- Add released output to CI workflow
+  ([`2cd8f06`](https://github.com/Soyokaze-42/CIS467-SP26-dad-jokes-app/commit/2cd8f066de1705010899d554d06b0a72a36ec7df))
+
+
 ## v1.1.4 (2026-05-04)
 
 ### Bug Fixes
