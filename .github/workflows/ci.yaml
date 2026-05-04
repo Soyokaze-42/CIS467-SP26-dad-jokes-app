@@ -16,6 +16,7 @@ jobs:
 
     outputs:
       tag: ${{ steps.release.outputs.tag }}
+      released: ${{ steps.release.outputs.released || 'false' }}
 
     steps:
       - name: Setup | Checkout Repository at workflow sha
