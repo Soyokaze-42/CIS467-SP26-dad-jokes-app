@@ -35,7 +35,7 @@ jobs:
   publish_image:
     uses: ./.github/workflows/release.yaml
     needs: release
-    if: ${{ needs.release.outputs.released }} == 'true'
+    if: ${{ needs.release.outputs.released == 'true' }}
     permissions:
       packages: write
       contents: read
